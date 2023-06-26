@@ -1,7 +1,7 @@
 - name: Demo on play level variables
   hosts: all
   vars:
-    URL = play.example.com
+    URL: play.example.com
   tasks:
     - name: display the variable
       ansible.builtin.msg:
@@ -14,7 +14,7 @@
       ansible.builtin.msg:
         msg: URL is - {{ URL }}
       vars:
-        URL = tasks.example.com
+        URL: tasks.example.com
 
 - name: Demo on task level variable
   hosts: all
