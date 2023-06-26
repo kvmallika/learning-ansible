@@ -10,7 +10,7 @@
 - name: Demo on task level variable
   hosts: all
   tasks:
-    - name: display tthe task level variabke
+    - name: display the task level variable
       ansible.builtin.msg:
         msg: URL is - {{ URL }}
       vars:
@@ -21,7 +21,7 @@
   vars:
     exvars.yml
   tasks:
-    - name: display tthe task level variabke
+    - name: display the task level variabke
       ansible.builtin.msg:
         msg: URL is - {{ URL }}
 
