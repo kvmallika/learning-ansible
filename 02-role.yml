@@ -1,0 +1,4 @@
+- name: Demo on roles function
+  hosts: all
+  roles:
+    - sample
