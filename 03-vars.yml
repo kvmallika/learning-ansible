@@ -1,0 +1,28 @@
+- name: Demo on play level variables
+  hosts: all
+  vars:
+    URL = play.example.com
+  tasks:
+    - name: display the variable
+      ansible.builtin.msg:
+        msg: {{ URL }}
+
+- name: Demo on task level variable
+  hosts: all
+  tasks:
+    - name: display tthe task level variabke
+      ansible.builtin.msg:
+        msg: {{ URL }}
+      vars:
+        URL = tasks.example.com
+
+- name: Demo on task level variable
+  hosts: all
+  vars:
+    exvars.yml
+  tasks:
+    - name: display tthe task level variabke
+      ansible.builtin.msg:
+        msg: {{ URL }}
+
+
