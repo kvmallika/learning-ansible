@@ -4,14 +4,14 @@
     URL: play.example.com
   tasks:
     - name: display the variable
-      ansible.builtin.msg:
+      ansible.builtin.debug:
         msg: URL is - {{ URL }}
 
 - name: Demo on task level variable
   hosts: all
   tasks:
     - name: display the task level variable
-      ansible.builtin.msg:
+      ansible.builtin.debug:
         msg: URL is - {{ URL }}
       vars:
         URL: tasks.example.com
@@ -22,7 +22,7 @@
     exvars.yml
   tasks:
     - name: display the task level variabke
-      ansible.builtin.msg:
+      ansible.builtin.debug:
         msg: URL is - {{ URL }}
 
 
