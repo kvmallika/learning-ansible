@@ -5,14 +5,14 @@
   tasks:
     - name: display the variable
       ansible.builtin.msg:
-        msg: {{ URL }}
+        msg: URL is - {{ URL }}
 
 - name: Demo on task level variable
   hosts: all
   tasks:
     - name: display tthe task level variabke
       ansible.builtin.msg:
-        msg: {{ URL }}
+        msg: URL is - {{ URL }}
       vars:
         URL = tasks.example.com
 
@@ -23,6 +23,6 @@
   tasks:
     - name: display tthe task level variabke
       ansible.builtin.msg:
-        msg: {{ URL }}
+        msg: URL is - {{ URL }}
 
 
