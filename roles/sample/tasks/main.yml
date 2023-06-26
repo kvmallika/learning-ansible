@@ -2,3 +2,6 @@
   ansible.builtin.debug:
     msg: Hello from roles
 
+- name: variable from role
+  ansible.builtin.debug:
+    msg: URL is - {{ URL }}
