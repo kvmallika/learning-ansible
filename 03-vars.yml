@@ -18,7 +18,7 @@
 
 - name: Demo on task level variable
   hosts: all
-  vars:
+  vars_files:
     - exvars.yml
   tasks:
     - name: display the task level variabke
