@@ -19,7 +19,7 @@
 - name: Demo on task level variable
   hosts: all
   vars:
-    exvars.yml
+   - exvars.yml
   tasks:
     - name: display the task level variabke
       ansible.builtin.debug:
