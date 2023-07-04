@@ -1,0 +1,8 @@
+- name: parameter stotage
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: demo on parameter storage
+      ansible.builtin.debug:
+        msg: parameter is - {{ lookup('aws_ssm', 'test.test', region='us-east-1' ) }}
+
